@@ -7,42 +7,23 @@ button: "read more"
 draft: false
 ---
 
-## Hi,I’m Linda McCoy Specilized In Blog Writing And Collecting
+## Hi,I’m Ferran Pons Specilized In Android Development
 
-Leverage agile frameworks to provide a robust Hugo Sousa synopsis for high level
-overviews. Iterative approaches to corporate strategy foster collaborative thinking to
-further the overall value proposition. Organically grow the holistic world view of
-disruptive innovation via workplace diversity and empowerment. 
+Senior Android Developer working for one of the most popular brands in Spain. With almost 20 years of experience as a programmer, my experience covers a lot of different kinds of applications, from web app development to desktop, mobile apps, and videogames.
+I've worked two years at Electronic Arts as an Integration Engineer, participating in some blockbuster games such as Burnout Paradise, DeadSpace, and the Skate franchise.
+Also, I started up my own indie videogame studio, labeled "Retrowax Games" with which I've made a game called Zombusters that was published for the Xbox360, Windows Phone, and PC (Steam, Itch.io).
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of
-the day, going forward, a new normal that has evolved from generation X is on the
-runway heading towards a streamlined cloud solution. User generated content in real-time
-will have multiple touchpoints for offshoring.
-
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize
-scalable metrics whereas proactive e-services. Seamlessly empower fully researched
-growth strategies and interoperable internal or “organic” sources.
-
-### Our Skill
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-accusam et justo duo dolores et ea rebum.
-
-  * Poutine drinking vinegar bitters.
-  * Literally cred narwhal bitters wayfarers.
-  * justo duo dolores et ea rebum.
-
-{{< button "Read More" "#!" >}}
-
-
-
-### Youtube
-{{< youtube g3-VxLQO7do >}}
-
-Credibly reintermediate backend ideas for cross-platform models. Continually
-reintermediate integrated processes through technically sound intellectual capital.
-Holistically foster superior methodologies without market-driven best practices.
-
-Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-
-business applications through revolutionary catalysts for change. Seamlessly underwhelm
-optimal testing procedures whereas bricks-and-clicks processes.
+* I can deliver high-quality work on tight schedules
+* I have experience mentoring junior developers on the team
+* 10 years of Android application development experience
+* I have strong knowledge of CS fundamentals including data structures, algorithms, and complexity analysis
+* Experience leading the development of mobile applications that have been successfully delivered to customers
+* I have the knowledge of Android's common software design patterns, including the ones needed to develop connected applications with high-performing UI
+* Strong communication, analytical and problem-solving skills
+* Understanding of system and application performance limits and characteristics
+* Deep understanding of the internals of Android frameworks
+* Knowledge of memory management and multi-threading
+* Experience working on high-volume consumer products
+* Strong sense of ownership, urgency, and drive
+* Ability to wear many hats, able to change direction quickly, and show eagerness to learn new things
+* Knowledge of patterns like MVP, MVVM

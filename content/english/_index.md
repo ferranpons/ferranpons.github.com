@@ -1,10 +1,10 @@
 ---
 banner:
-  title: "Hey, I’m <br/> David Hovitch"
-  description: "Looking for my next opportunity to make a change in digital way. Consetetur sadipscing elitr tempor invidunt utlabore."
+  title: "Senior Android Developer"
+  description: "With almost 20 years of experience as a programmer, my experience covers a lot of different kinds of applications, from web app development to desktop, mobile apps, and videogames."
   image: "images/banner.jpg"
   button:
-    enable : true
+    enable : false
     label : "get a quote"
     link : "/"
 

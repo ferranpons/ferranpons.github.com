@@ -7,7 +7,7 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Sobre"
+name = "Sobre mí"
 url = "about/"
 weight = 2
 
