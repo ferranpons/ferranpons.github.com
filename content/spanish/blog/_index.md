@@ -1,7 +1,7 @@
 ---
-title: "Latest News"
-subtitle: "Read all latest blog posts"
+title: "Últimas noticias"
+subtitle: "Lee los artículos más recientes"
 # meta description
-description: "Read all latest blog posts"
+description: "Lee los artículos más recientes"
 draft: false
 ---
