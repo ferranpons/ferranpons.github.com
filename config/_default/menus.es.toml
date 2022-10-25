@@ -7,32 +7,31 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Sobre mí"
-url = "about/"
+name = "Blog"
+url = "blog"
 weight = 2
 
 [[main]]
-name = "Contacto"
-url = "contact/"
+name = "Sobre mí"
+url = "about/"
 weight = 3
 
+#[[main]]
+#name = "Elemento"
+#url = "element/"
+#weight = 4
 
-[[main]]
-name = "Elemento"
-url = "element/"
-weight = 4
+#[[main]]
+#weight = 5
+#name = "Páginas"
+#hasChildren = true
 
-[[main]]
-weight = 5
-name = "Páginas"
-hasChildren = true
+#[[main]]
+#parent = "Pages"
+#name = "Blog"
+#url = "blog/post-1/"
 
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "blog/post-1/"
-
-[[main]]
-parent = "Pages"
-name = "Categoría"
-url = "categories/travel"
+#[[main]]
+#parent = "Pages"
+#name = "Categoría"
+#url = "categories/travel"

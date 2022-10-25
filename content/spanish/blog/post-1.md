@@ -1,80 +1,80 @@
 ---
 date: "2021-06-25"
-title: "How to run your Monogame app on a Raspberry Pi (or any Linux)"
+title: "Cómo hacer funcionar tu juego en Monogame en una Raspberry Pi (o cualquier Linux)"
 image: "images/blog/01.png"
 categories: ["Raspberry Pi", "Monogame", "Linux"]
 draft: false
 ---
 
-If you are here you probably have a Windows game developed using Monogame that you would like to port to a Raspberry Pi device with Raspberry Pi OS (Raspbian). Or even, to any Linux distribution. Well, you are in the right place. This mini-tutorial will cover all the steps to run your game on it.
+Si está aquí, probablemente tenga un juego de Windows desarrollado con Monogame que le gustaría portar a un dispositivo Raspberry Pi con Raspberry Pi OS (Raspbian). O incluso, a cualquier distribución de Linux. Bueno, estás en el lugar correcto. Este mini-tutorial cubrirá todos los pasos para ejecutar tu juego en él.
 
-Requirements
-Before starting to get your hands on the task you must comply with these requirements to maximize compatibility and to be up-to-date.
+Requisitos
+Antes de comenzar a poner sus manos en la tarea, debe cumplir con estos requisitos para maximizar la compatibilidad y estar actualizado.
 
-Monogame 3.8 (it could run on older versions but not tested)
-Your game using .Net Core 3 or newer
-Your game and assets built with target DesktopGL
-Raspberry Pi 2 or newer (dotnet can publish only on newer devices and not on the original RPi)
-How to do it
-We are going to use our videogame Zombusters that is #OpenSource as an example of a real project working.
+Monogame 3.8 (podría ejecutarse en versiones anteriores pero no probado)
+Tu juego usando .Net Core 3 o posterior
+Tu juego y recursos creados con Target DesktopGL
+Raspberry Pi 2 o posterior (dotnet solo puede publicar en dispositivos más nuevos y no en el RPi original)
+Cómo hacerlo
+Vamos a utilizar nuestro videojuego Zombusters que es #OpenSource como ejemplo de un proyecto real funcionando.
 
-Clone the Game Repository
-git clone https://github.com/retrowax/Zombusters.git
+Clonar el repositorio del juego
+clon de git https://github.com/retrowax/Zombusters.git
 
-2. Download and install .NET Core 3.1 SDK
+2. Descargue e instale .NET Core 3.1 SDK
 
-In this case, at the moment we are still using .NET Core 3.1 but it would be the same for the latest version 5.0. Here you will find the SDK:
+En este caso, de momento seguimos usando .NET Core 3.1 pero sería lo mismo para la última versión 5.0. Aquí encontrará el SDK:
 
 https://dotnet.microsoft.com/download/dotnet-core/3.1
 
-We need to download the Arm32 version because Raspberry Pi OS is still 32bit.
+Necesitamos descargar la versión Arm32 porque el sistema operativo Raspberry Pi todavía es de 32 bits.
 
 wget https://download.visualstudio.microsoft.com/download/pr/2178c8a1-ad48-4e51-9ddd-4e3ab64d1f0e/68746abefadf62be43ca525653c915a1/dotnet-sdk-3.1.405-linux-arm.tar.gz
 
-Now we need to uncompress the file and install it on our path:
+Ahora necesitamos descomprimir el archivo e instalarlo en nuestra ruta:
 
 mkdir -p “$HOME/dotnet” && tar zxf dotnet-sdk-3.1.405-linux-arm.tar.gz -C “$HOME/dotnet”
 
-export DOTNET_ROOT=$HOME/dotnet
+exportar DOTNET_ROOT=$HOME/dotnet
 
 export PATH=$PATH:$HOME/dotnet
 
-If you want .NET Core to still work after restarting the system you would need to do this:
+Si desea que .NET Core siga funcionando después de reiniciar el sistema, deberá hacer esto:
 
-sudo vi /etc/profile
+sudo vi /etc/perfil
 
-Add these lines at the bottom of the file and save it, use your editor of choice I used vi.
+Agregue estas líneas en la parte inferior del archivo y guárdelo, use el editor de su elección. Usé vi.
 
-export DOTNET_ROOT=$HOME/dotnet
+exportar DOTNET_ROOT=$HOME/dotnet
 
 export PATH=$PATH:$HOME/dotnet
 
-3. Build the Game Solution
+3. Crea la solución del juego
 
-Now is time to build the solution but first, we need to download the required Nuget dependencies included on the solution before we could build it.
+Ahora es el momento de compilar la solución, pero primero debemos descargar las dependencias de Nuget requeridas incluidas en la solución antes de que podamos compilarla.
 
-dotnet restore ZombustersLinux.sln
+dotnet restaurar ZombustersLinux.sln
 
-Then, build the Debug flavor:
+Luego, crea el sabor Debug:
 
 dotnet msbuild ZombustersLinux.sln
 
-Now you would like to make changes to your solution in order to adapt it or solve eventual issues with your solution being migrated to your Raspberry Pi.
+Ahora le gustaría realizar cambios en su solución para adaptarla o resolver eventuales problemas con la migración de su solución a su Raspberry Pi.
 
-If the build runs without errors, it generates a dll with the debug build that could be executed with this command (the path is where your solution files were generated):
+Si la compilación se ejecuta sin errores, genera un dll con la compilación de depuración que podría ejecutarse con este comando (la ruta es donde se generaron los archivos de la solución):
 
-dotnet /home/pi/Documents/github/Zombusters/ZombustersWindows/bin/Debug/netcoreapp3.1/ZombustersLinux.dll
+dotnet /home/pi/Documentos/github/Zombusters/ZombustersWindows/bin/Debug/netcoreapp3.1/ZombustersLinux.dll
 
-Note: if is the first time migrating to a Linux environment it would be possible that your Content Load paths could be wrong and could generate errors when building.
+Nota: si es la primera vez que migra a un entorno Linux, es posible que sus rutas de carga de contenido estén equivocadas y generen errores al compilar.
 
-And that’s it! You will have now your game up and running on your Raspberry Pi.
+¡Y eso es! Ahora tendrás tu juego funcionando en tu Raspberry Pi.
 
-This process could be used to execute it on other Linux distributions, you only need to download the correct arch for the .NET Core SDK.
+Este proceso podría usarse para ejecutarlo en otras distribuciones de Linux, solo necesita descargar el arco correcto para el SDK de .NET Core.
 
-Finally, if you would like to try Zombusters on your Raspberry Pi, you can download it for FREE here:
+Finalmente, si desea probar Zombusters en su Raspberry Pi, puede descargarlo GRATIS aquí:
 
-https://retrowax.itch.io/zombusters-raspberry-pi-edition
+https://retrowax.itch.io/zombusters-raspberry-pi-edición
 
-In the next posts, we will cover the ways to create a Release build and the best options to distribute it.
+En las próximas publicaciones, cubriremos las formas de crear una versión de lanzamiento y las mejores opciones para distribuirla.
 
-Stay tuned!
+¡Manténganse al tanto!

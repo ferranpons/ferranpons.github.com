@@ -7,23 +7,23 @@ button: "leer más"
 draft: false
 ---
 
-## Hi,I’m Ferran Pons Specilized In Android Development
+## Hola, soy Ferran Pons, especialista en desarrollo Android
 
-Senior Android Developer working for one of the most popular brands in Spain. With almost 20 years of experience as a programmer, my experience covers a lot of different kinds of applications, from web app development to desktop, mobile apps, and videogames.
-I've worked two years at Electronic Arts as an Integration Engineer, participating in some blockbuster games such as Burnout Paradise, DeadSpace, and the Skate franchise.
-Also, I started up my own indie videogame studio, labeled "Retrowax Games" with which I've made a game called Zombusters that was published for the Xbox360, Windows Phone, and PC (Steam, Itch.io).
+Desarrollador Android Senior trabajando para una de las marcas más populares en España. Con casi 20 años de experiencia como programador, mi experiencia abarca muchos tipos diferentes de aplicaciones, desde desarrollo de aplicaciones web hasta aplicaciones de escritorio, móviles y videojuegos.
+Trabajé dos años en Electronic Arts como ingeniero de integración, participando en algunos juegos de gran éxito como Burnout Paradise, DeadSpace y la franquicia Skate.
+Además, comencé mi propio estudio de videojuegos independiente, llamado "Retrowax Games", con el que hice un juego llamado Zombusters que se publicó para Xbox360, Windows Phone y PC (Steam, Itch.io).
 
-* I can deliver high-quality work on tight schedules
-* I have experience mentoring junior developers on the team
-* 10 years of Android application development experience
-* I have strong knowledge of CS fundamentals including data structures, algorithms, and complexity analysis
-* Experience leading the development of mobile applications that have been successfully delivered to customers
-* I have the knowledge of Android's common software design patterns, including the ones needed to develop connected applications with high-performing UI
-* Strong communication, analytical and problem-solving skills
-* Understanding of system and application performance limits and characteristics
-* Deep understanding of the internals of Android frameworks
-* Knowledge of memory management and multi-threading
-* Experience working on high-volume consumer products
-* Strong sense of ownership, urgency, and drive
-* Ability to wear many hats, able to change direction quickly, and show eagerness to learn new things
-* Knowledge of patterns like MVP, MVVM
+* Puedo entregar trabajo de alta calidad en horarios ajustados
+* Tengo experiencia asesorando a desarrolladores junior en el equipo
+* 10 años de experiencia en desarrollo de aplicaciones Android
+* Tengo un gran conocimiento de los fundamentos de CS, incluidas las estructuras de datos, los algoritmos y el análisis de complejidad.
+* Experiencia liderando el desarrollo de aplicaciones móviles que se han entregado con éxito a los clientes
+* Tengo conocimiento de los patrones de diseño de software comunes de Android, incluidos los necesarios para desarrollar aplicaciones conectadas con una interfaz de usuario de alto rendimiento.
+* Fuertes habilidades de comunicación, análisis y resolución de problemas.
+* Comprensión de los límites y características de rendimiento del sistema y la aplicación
+* Comprensión profunda de las partes internas de los marcos de Android
+* Conocimientos en manejo de memoria y multi-threading
+* Experiencia trabajando en productos de consumo de alto volumen
+* Fuerte sentido de propiedad, urgencia e impulso.
+* Habilidad para usar muchos sombreros, capaz de cambiar de dirección rápidamente y mostrar entusiasmo por aprender cosas nuevas
+* Conocimiento de patrones como MVP, MVVM
