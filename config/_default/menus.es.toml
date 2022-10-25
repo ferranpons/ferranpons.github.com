@@ -1,0 +1,37 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "Blog"
+url = "blog"
+weight = 2
+
+[[main]]
+name = "Sobre mí"
+url = "about/"
+weight = 3
+
+#[[main]]
+#name = "Elemento"
+#url = "element/"
+#weight = 4
+
+#[[main]]
+#weight = 5
+#name = "Páginas"
+#hasChildren = true
+
+#[[main]]
+#parent = "Pages"
+#name = "Blog"
+#url = "blog/post-1/"
+
+#[[main]]
+#parent = "Pages"
+#name = "Categoría"
+#url = "categories/travel"

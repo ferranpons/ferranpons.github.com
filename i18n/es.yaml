@@ -1,0 +1,35 @@
+- id: read_more
+  translation: Leer más
+
+- id: min_read
+  translation: minutos de lectura
+
+- id: instagram
+  translation: Instagram
+
+- id: contact_me
+  translation: Contáctame
+  
+- id: follow_me
+  translation: Sígueme
+
+- id: first_name
+  translation: Nombre
+  
+- id: last_name
+  translation: Apellido
+  
+- id: email
+  translation: Email 
+
+- id: message
+  translation: Escribe tu mensaje...
+
+- id: submit
+  translation: enviar mensaje
+
+- id: search
+  translation: Buscar aquí
+
+- id: search_for
+  translation: Buscar resultados para
