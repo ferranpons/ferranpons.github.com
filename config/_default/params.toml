@@ -91,6 +91,11 @@ sidebar = ["search", "categories", "recent-post", "social"]
 #link = "#"
 
 [[social]]
+title = "mastodon"
+icon = "fab fa-mastodon" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://androiddev.social/@ferranpons"
+
+[[social]]
 title = "twitter"
 icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://twitter.com/ponsaffair"
