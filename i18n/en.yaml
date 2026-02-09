@@ -1,35 +1,73 @@
-- id: read_more
-  translation: Read More
+## Meta tags
+- id: "meta_title"
+  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+- id: "meta_description"
+  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+- id: "meta_keywords"
+  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+- id: "meta_author"
+  translation: "Adrián Moreno Peña"
+- id: "meta_image"
+  translation: "/img/general/og-image.jpg"
 
-- id: min_read
-  translation: minutes read
+## Header
 
-- id: instagram
-  translation: Instagram
+- id: "logo_alt"
+  translation: "Adritian logo"
 
-- id: contact_me
-  translation: Contact me
-  
-- id: follow_me
-  translation: Follow me
+- id: "logo_text1"
+  translation: "Adritian"
 
-- id: first_name
-  translation: First Name
-  
-- id: last_name
-  translation: Last Name
-  
-- id: email
-  translation: Email 
+- id: "logo_text2"
+  translation: "Demo"
 
-- id: message
-  translation: Type your message... 
+## General
+- id: "skipToMainContent"
+  translation: "Skip to main content"
 
-- id: submit
-  translation: submit message
+- id: "toggle_navigation"
+  translation: "Toggle navigation"
 
-- id: search
-  translation: Search here
+## Footer
+- id: "footer_notice"
+  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
 
-- id: search_for
-  translation: Search results for
+- id: "language"
+  translation: "Language"
+
+- id: "toggle_theme"
+  translation: "Toggle theme"
+
+- id: "theme_light"
+  translation: "☀️ Light"
+- id: "theme_dark"
+  translation: "🌑 Dark"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Homepage head title
+- id: "head_title"
+  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+
+- id: "head_description"
+  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+
+
+## Blog
+- id: "read_more"
+  translation: "Read more"
+
+- id: "published_on"
+  translation: "Published on "
+
+- id: "continue_reading"
+  translation: "Continue reading"
+
+## 404 Page
+- id: "404_title"
+  translation: "Page not found"
+- id: "404_description"  
+  translation: "Sorry, but the page you were looking for could not be found."
+- id: "404_button"
+  translation: "Back to homepage"
+

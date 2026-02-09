@@ -1,35 +1,62 @@
-- id: read_more
-  translation: Leer más
+## Meta tags
+- id: "meta_title"
+  translation: "Adritian - un tema Hugo de alto rendimiento por Adrián Moreno"
+- id: "meta_description"
+  translation: "Este tema de Hugo (Adritian) está basado en Bootstrap y tiene características que lo hacen adecuado para un sitio personal, un portafolio u otros tipos de aplicaciones de una sola página."
+- id: "meta_keywords"
+  translation: "hugo, tema, bootstrap, adritian, adrian moreno, sitio personal, portfolio, aplicación de una sola página"
+- id: "meta_author"
+  translation: "Adrián Moreno Peña"
+- id: "meta_image"
+  translation: "/img/general/og-image.jpg"
 
-- id: min_read
-  translation: minutos de lectura
+## Header
+- id: "logo_alt"
+  translation: "Adritian logo"
+- id: "logo_text1"
+  translation: "Genial"
+- id: "logo_text2"
+  translation: "Nombre"
 
-- id: instagram
-  translation: Instagram
 
-- id: contact_me
-  translation: Contáctame
-  
-- id: follow_me
-  translation: Sígueme
+## General
+- id: "skipToMainContent"
+  translation: "Saltar al contenido principal"
+- id: "toggle_navigation"
+  translation: "Mostrar navegación"
 
-- id: first_name
-  translation: Nombre
-  
-- id: last_name
-  translation: Apellido
-  
-- id: email
-  translation: Email 
+## Footer
+- id: "footer_notice"
+  translation: "© Adritian. Tema gratuito de Hugo por Adrián Moreno Peña."
+- id: "language"
+  translation: "Idioma"
+- id: "toggle_theme"
+  translation: "Seleccionar esquema de color"
+- id: "theme_light"
+  translation: "☀️ Claro"
+- id: "theme_dark"
+  translation: "🌑 Oscuro"
+- id: "theme_auto"
+  translation: "✨ Auto"
 
-- id: message
-  translation: Escribe tu mensaje...
+## Homepage head title
+- id: "head_title"
+  translation: "Sitio demo de Adritian - un tema Hugo de alto rendimiento por Adrián Moreno"
+- id: "head_description"
+  translation: "Este tema de Hugo (Adritian) está basado en Bootstrap y tiene características que lo hacen adecuado para un sitio personal, un portafolio u otros tipos de aplicaciones de una sola página."
 
-- id: submit
-  translation: enviar mensaje
+## Blog
+- id: "read_more"
+  translation: "Leer más"
+- id: "published_on"
+  translation: "Publicado el "
+- id: "continue_reading"
+  translation: "Continuar leyendo"
 
-- id: search
-  translation: Buscar aquí
-
-- id: search_for
-  translation: Buscar resultados para
+## 404 Page
+- id: "404_title"  
+  translation: "Página no encontrada"
+- id: "404_description"
+  translation: "Lo sentimos, pero la página que buscabas no pudo ser encontrada."
+- id: "404_button"
+  translation: "Volver al inicio"

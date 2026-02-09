@@ -1,2 +1,6 @@
 /.idea
 resources/_gen
+public
+resources
+build
+node_modules
