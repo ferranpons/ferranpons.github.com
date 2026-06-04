@@ -6,8 +6,8 @@ draft = false
 
 {{< showcase-section
     title="Kotlin Multiplatform, Native C++ & AI Engineer"
-    buttonText="Work with me"
-    button_url="#contact"
+
+
     description="I help teams build production-grade mobile, multiplatform and AI-powered applications — from Kotlin Multiplatform apps and native C++ integrations to on-device LLM tooling."
     imgSrc="images/showcase/ferran_profile_image2cropped.png"
     imgScale="0.5"
@@ -21,7 +21,6 @@ draft = false
 {{< /platform-links >}}
 
 <div class="hero-cta-group">
-  <a href="#contact" class="cta-primary">Work with me</a>
   <a href="#portfolio" class="cta-secondary">View projects</a>
 </div>
 

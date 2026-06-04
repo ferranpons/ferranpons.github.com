@@ -6,8 +6,8 @@ draft = false
 
 {{< showcase-section
     title="Enginyer Kotlin Multiplatform, C++ Natiu i IA"
-    buttonText="Treballa amb mi"
-    button_url="#contacte"
+
+
     description="Ajudo equips a construir aplicacions mòbils, multiplataforma i impulsades per IA de nivell producció — des d'apps Kotlin Multiplatform i integracions natives en C++ fins a eines LLM en dispositiu."
     imgSrc="images/showcase/ferran_profile_image2cropped.png"
     imgScale="0.5"
@@ -21,7 +21,6 @@ draft = false
 {{< /platform-links >}}
 
 <div class="hero-cta-group">
-  <a href="#contacte" class="cta-primary">Treballa amb mi</a>
   <a href="#portfolio" class="cta-secondary">Veure projectes</a>
 </div>
 
