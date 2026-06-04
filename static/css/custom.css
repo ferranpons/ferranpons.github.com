@@ -68,12 +68,19 @@ a:focus-visible {
 }
 
 /* ---------- Header logo — script font ---------- */
-.navbar-brand span {
+.navbar-brand {
   font-family: 'Great Vibes', cursive !important;
-  font-size: 2rem !important;
+  font-size: 2.4rem !important;
   font-weight: 400 !important;
   letter-spacing: 0.01em;
   line-height: 1;
+  text-decoration: none !important;
+}
+
+.navbar-brand span {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: inherit !important;
+  font-weight: 400 !important;
 }
 
 /* First span (Ferran) gets the accent colour, second (Pons) is text colour */
@@ -85,42 +92,87 @@ a:focus-visible {
   color: var(--text) !important;
 }
 
-/* ---------- Hero title/subtitle swap ---------- */
-/* title slot holds the role (h1), subtitle slot holds the name (h2) — invert visual weights */
+/* ---------- Header background ---------- */
+.header {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--card-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ---------- Fixed header offset ---------- */
+/* The navbar is ~72px tall with the larger script font; push main content down */
+body {
+  padding-top: 72px !important;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 64px !important;
+  }
+}
+
+/* ---------- Hero title ---------- */
 .rad-showcase h1.display-1 {
-  font-size: clamp(1.6rem, 4vw, 2.6rem);
-  font-weight: 500;
-  color: var(--muted) !important;
-  margin-bottom: 0.25rem;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: var(--text) !important;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
 }
 
 .rad-showcase h2.display-5 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  color: var(--text) !important;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--muted) !important;
   margin-bottom: 1rem;
 }
 
-/* Hide subtitle when empty */
-.rad-showcase h2.display-5:empty {
+/* Hide subtitle when empty — span is present but contains no text */
+.rad-showcase h2.display-5:has(> span:empty) {
   display: none;
 }
 
 /* ---------- Rounded images ---------- */
-.profile-image img,
 .profile-image picture,
-.about-section img,
-.about-section picture,
-.speaking-image {
+.about__profile-picture picture {
+  display: block;
   border-radius: 16px;
   overflow: hidden;
 }
 
-/* picture element itself needs radius + clip */
-.profile-image picture {
-  display: block;
+.profile-image img,
+.about__profile-picture img,
+.speaking-image {
   border-radius: 16px;
-  overflow: hidden;
+}
+
+/* Override theme's image-left-overflow: undo negative margin, diagonal clip-path and hard edges */
+.about__profile-picture img.image-left-overflow,
+.section div[class*="col-"] img.image-left-overflow {
+  clip-path: none !important;
+  margin-left: 0 !important;
+  border-radius: 16px !important;
+  max-width: 100%;
+}
+
+/* ---------- Hero image — smaller ---------- */
+.rad-showcase .profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rad-showcase .profile-image img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .rad-showcase .profile-image img {
+    max-width: 220px;
+  }
 }
 
 /* ---------- Sections ---------- */

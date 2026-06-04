@@ -45,6 +45,10 @@
 - id: "theme_auto"
   translation: "✨ Auto"
 
+## Showcase section
+- id: "showcase_subtitle"
+  translation: ""
+
 ## Homepage head title
 - id: "head_title"
   translation: "Ferran Pons | Kotlin Multiplatform & AI Engineer"

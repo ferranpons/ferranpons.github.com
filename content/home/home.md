@@ -6,7 +6,6 @@ draft = false
 
 {{< showcase-section
     title="Kotlin Multiplatform & AI Engineer"
-    subtitle=""
     buttonText="Work with me"
     description="I build production-grade mobile and multiplatform systems — from Kotlin Multiplatform apps and native C++ integrations to on-device AI and LLM tooling."
     imgSrc="images/showcase/ferran_profile_image2cropped.png"
