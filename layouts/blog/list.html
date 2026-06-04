@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div id="main-content" tabindex="-1" class="fp-blog" aria-labelledby="blog-list-title">
+  <div class="container">
+    <div class="fp-blog__header">
+      <h1 id="blog-list-title">{{ .Title }}</h1>
+      {{ with .Content }}<p class="fp-blog__intro">{{ . | plainify }}</p>{{ end }}
+    </div>
+
+    {{ $allPosts := .Pages.ByDate.Reverse }}
+    <div class="fp-blog__grid">
+      {{ range $allPosts }}
+      <a href="{{ .RelPermalink }}" class="fp-post-card">
+        <div class="fp-post-card__meta">
+          {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}
+          {{ with .Params.tags }}
+            {{ range first 2 . }}
+              <span class="fp-post-card__tag">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        </div>
+        <h2 class="fp-post-card__title">{{ .Title }}</h2>
+        <p class="fp-post-card__summary">{{ .Summary | plainify | truncate 140 }}</p>
+        <span class="fp-post-card__cta">Read article →</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

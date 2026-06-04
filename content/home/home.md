@@ -129,17 +129,24 @@ text_align="center"
     </div>
   </div>
   <div class="project-card">
+    <h4><a href="https://github.com/ferranpons/llamatik-code" target="_blank" rel="noopener">Llamatik Code</a></h4>
+    <p>Developer tooling built on top of Llamatik — on-device AI assistance powered by local LLMs.</p>
+    <div class="project-tags">
+      <span>KMP</span><span>AI</span><span>Tooling</span><span>On-device</span>
+    </div>
+  </div>
+  <div class="project-card">
+    <h4><a href="https://github.com/ferranpons/leku" target="_blank" rel="noopener">Leku</a></h4>
+    <p>A location picker library for Android, built to be simple, customisable and production-ready.</p>
+    <div class="project-tags">
+      <span>Android</span><span>Maps</span><span>Library</span><span>Open Source</span>
+    </div>
+  </div>
+  <div class="project-card">
     <h4><a href="https://github.com/ferranpons" target="_blank" rel="noopener">Kotlin Multiplatform Libraries</a></h4>
     <p>KMP libraries, native integration experiments, build tooling and framework distribution work.</p>
     <div class="project-tags">
       <span>KMP</span><span>Kotlin/Native</span><span>C++</span><span>CMake</span>
-    </div>
-  </div>
-  <div class="project-card">
-    <h4><a href="/blog">Technical Writing & How To</a></h4>
-    <p>Practical guides on Kotlin Multiplatform, iOS frameworks, native linking and on-device AI.</p>
-    <div class="project-tags">
-      <span>KMP</span><span>iOS</span><span>AI</span><span>Guides</span>
     </div>
   </div>
 </div>

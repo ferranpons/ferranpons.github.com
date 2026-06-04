@@ -1,23 +1,23 @@
 +++
-title =  "Footer"
+title = "Footer"
 type = "footer"
 draft = false
 +++
 
-{{< contact-section
-    title="Let's build something great"
-    contact_form_name="Your name"
-    contact_form_email="Your e-mail"
-    contact_form_message="Need help with Kotlin Multiplatform, native integrations or AI-powered applications? Send me a message."
-    contact_form_phone="Your phone"
-    contact_button="Send message"
-    contact_phone_title="GitHub"
-    contact_phone_number="<a href='https://github.com/ferranpons' target='_blank' rel='noopener'>github.com/ferranpons</a>"
-    contact_email_title="LinkedIn"
-    contact_email_email="<a href='https://www.linkedin.com/in/ferranpons/' target='_blank' rel='noopener'>linkedin.com/in/ferranpons</a>"
-    contact_address_title="Email"
-    contact_address_address="<a href='mailto:hello@ferranpons.com'>hello@ferranpons.com</a>"
-    form_action="https://formspree.io/f/mail@example.com"
-    form_method="POST"
-    contact_form_rows="3"
->}}
+{{< text-section title="Let's connect" centered="false" >}}
+<div class="contact-links-section">
+  <p class="contact-links-intro">Interested in working together or just want to say hi? Find me on GitHub or LinkedIn.</p>
+  <div class="contact-links-row">
+    <a href="https://github.com/ferranpons" class="contact-link-card" target="_blank" rel="noopener" aria-label="Ferran Pons on GitHub">
+      <i class="icon-square-github" aria-hidden="true"></i>
+      <span class="contact-link-card__label">GitHub</span>
+      <span class="contact-link-card__value">github.com/ferranpons</span>
+    </a>
+    <a href="https://www.linkedin.com/in/ferranpons/" class="contact-link-card" target="_blank" rel="noopener" aria-label="Ferran Pons on LinkedIn">
+      <i class="icon-linkedin" aria-hidden="true"></i>
+      <span class="contact-link-card__label">LinkedIn</span>
+      <span class="contact-link-card__value">linkedin.com/in/ferranpons</span>
+    </a>
+  </div>
+</div>
+{{< /text-section >}}
