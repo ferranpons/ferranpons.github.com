@@ -1,35 +1,65 @@
-- id: read_more
-  translation: Leer más
+## Meta tags
+- id: "meta_title"
+  translation: "Ferran Pons | Ingeniero Kotlin Multiplatform, C++ Nativo e IA"
+- id: "meta_description"
+  translation: "Ingeniero Senior Mobile y Kotlin Multiplatform especializado en C++ nativo, Kotlin/Native, integraciones de IA, LLMs en dispositivo y aplicaciones móviles de producción."
+- id: "meta_keywords"
+  translation: "Ferran Pons, Kotlin Multiplatform, KMP, Kotlin Native, Android, iOS, C++ nativo, CMake, enlazado estático, IA, LLM, llama.cpp, IA en dispositivo"
+- id: "meta_author"
+  translation: "Ferran Pons"
+- id: "meta_image"
+  translation: "/img/og-img.png"
 
-- id: min_read
-  translation: minutos de lectura
+## Header
+- id: "logo_alt"
+  translation: "Ferran Pons — Ingeniero Kotlin Multiplatform e IA"
+- id: "logo_text1"
+  translation: "Ferran"
+- id: "logo_text2"
+  translation: "Pons"
 
-- id: instagram
-  translation: Instagram
+## General
+- id: "skipToMainContent"
+  translation: "Saltar al contenido principal"
+- id: "toggle_navigation"
+  translation: "Mostrar navegación"
 
-- id: contact_me
-  translation: Contáctame
-  
-- id: follow_me
-  translation: Sígueme
+## Footer
+- id: "footer_notice"
+  translation: "© Ferran Pons. Todos los derechos reservados."
+- id: "language"
+  translation: "Idioma"
+- id: "toggle_theme"
+  translation: "Cambiar tema"
+- id: "theme_light"
+  translation: "☀️ Claro"
+- id: "theme_dark"
+  translation: "🌑 Oscuro"
+- id: "theme_auto"
+  translation: "✨ Auto"
 
-- id: first_name
-  translation: Nombre
-  
-- id: last_name
-  translation: Apellido
-  
-- id: email
-  translation: Email 
+## Showcase section
+- id: "showcase_subtitle"
+  translation: ""
 
-- id: message
-  translation: Escribe tu mensaje...
+## Homepage head title
+- id: "head_title"
+  translation: "Ferran Pons | Ingeniero Kotlin Multiplatform, C++ Nativo e IA"
+- id: "head_description"
+  translation: "Ingeniero Senior Mobile y Kotlin Multiplatform especializado en C++ nativo, Kotlin/Native, integraciones de IA, LLMs en dispositivo y aplicaciones móviles de producción."
 
-- id: submit
-  translation: enviar mensaje
+## Blog
+- id: "read_more"
+  translation: "Leer más"
+- id: "published_on"
+  translation: "Publicado el "
+- id: "continue_reading"
+  translation: "Continuar leyendo"
 
-- id: search
-  translation: Buscar aquí
-
-- id: search_for
-  translation: Buscar resultados para
+## 404 Page
+- id: "404_title"
+  translation: "Página no encontrada"
+- id: "404_description"
+  translation: "Lo sentimos, la página que buscabas no existe."
+- id: "404_button"
+  translation: "Volver al inicio"

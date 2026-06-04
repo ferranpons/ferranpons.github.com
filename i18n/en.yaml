@@ -1,35 +1,76 @@
-- id: read_more
-  translation: Read More
+## Meta tags
+- id: "meta_title"
+  translation: "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
+- id: "meta_description"
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications."
+- id: "meta_keywords"
+  translation: "Ferran Pons, Kotlin Multiplatform, KMP, Kotlin Native, Android Engineer, iOS Engineer, Mobile Engineer, Native C++, CMake, static linking, linker debugging, AI Engineer, LLM, llama.cpp, on-device AI"
+- id: "meta_author"
+  translation: "Ferran Pons"
+- id: "meta_image"
+  translation: "/img/og-img.png"
 
-- id: min_read
-  translation: minutes read
+## Header
 
-- id: instagram
-  translation: Instagram
+- id: "logo_alt"
+  translation: "Ferran Pons — Kotlin Multiplatform & AI Engineer"
 
-- id: contact_me
-  translation: Contact me
-  
-- id: follow_me
-  translation: Follow me
+- id: "logo_text1"
+  translation: "Ferran"
 
-- id: first_name
-  translation: First Name
-  
-- id: last_name
-  translation: Last Name
-  
-- id: email
-  translation: Email 
+- id: "logo_text2"
+  translation: "Pons"
 
-- id: message
-  translation: Type your message... 
+## General
+- id: "skipToMainContent"
+  translation: "Skip to main content"
 
-- id: submit
-  translation: submit message
+- id: "toggle_navigation"
+  translation: "Toggle navigation"
 
-- id: search
-  translation: Search here
+## Footer
+- id: "footer_notice"
+  translation: "© Ferran Pons. All rights reserved."
 
-- id: search_for
-  translation: Search results for
+- id: "language"
+  translation: "Language"
+
+- id: "toggle_theme"
+  translation: "Toggle theme"
+
+- id: "theme_light"
+  translation: "☀️ Light"
+- id: "theme_dark"
+  translation: "🌑 Dark"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Showcase section
+- id: "showcase_subtitle"
+  translation: ""
+
+## Homepage head title
+- id: "head_title"
+  translation: "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
+
+- id: "head_description"
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications."
+
+
+## Blog
+- id: "read_more"
+  translation: "Read more"
+
+- id: "published_on"
+  translation: "Published on "
+
+- id: "continue_reading"
+  translation: "Continue reading"
+
+## 404 Page
+- id: "404_title"
+  translation: "Page not found"
+- id: "404_description"
+  translation: "Sorry, but the page you were looking for could not be found."
+- id: "404_button"
+  translation: "Back to homepage"

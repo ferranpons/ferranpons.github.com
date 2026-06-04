@@ -1,0 +1,65 @@
+## Meta tags
+- id: "meta_title"
+  translation: "Ferran Pons | Enginyer Kotlin Multiplatform, C++ Natiu i IA"
+- id: "meta_description"
+  translation: "Enginyer Senior Mobile i Kotlin Multiplatform especialitzat en C++ natiu, Kotlin/Native, integracions d'IA, LLMs en dispositiu i aplicacions mòbils de producció."
+- id: "meta_keywords"
+  translation: "Ferran Pons, Kotlin Multiplatform, KMP, Kotlin Native, Android, iOS, C++ natiu, CMake, enllaçat estàtic, IA, LLM, llama.cpp, IA en dispositiu"
+- id: "meta_author"
+  translation: "Ferran Pons"
+- id: "meta_image"
+  translation: "/img/og-img.png"
+
+## Header
+- id: "logo_alt"
+  translation: "Ferran Pons — Enginyer Kotlin Multiplatform i IA"
+- id: "logo_text1"
+  translation: "Ferran"
+- id: "logo_text2"
+  translation: "Pons"
+
+## General
+- id: "skipToMainContent"
+  translation: "Saltar al contingut principal"
+- id: "toggle_navigation"
+  translation: "Mostrar navegació"
+
+## Footer
+- id: "footer_notice"
+  translation: "© Ferran Pons. Tots els drets reservats."
+- id: "language"
+  translation: "Idioma"
+- id: "toggle_theme"
+  translation: "Canviar tema"
+- id: "theme_light"
+  translation: "☀️ Clar"
+- id: "theme_dark"
+  translation: "🌑 Fosc"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Showcase section
+- id: "showcase_subtitle"
+  translation: ""
+
+## Homepage head title
+- id: "head_title"
+  translation: "Ferran Pons | Enginyer Kotlin Multiplatform, C++ Natiu i IA"
+- id: "head_description"
+  translation: "Enginyer Senior Mobile i Kotlin Multiplatform especialitzat en C++ natiu, Kotlin/Native, integracions d'IA, LLMs en dispositiu i aplicacions mòbils de producció."
+
+## Blog
+- id: "read_more"
+  translation: "Llegir més"
+- id: "published_on"
+  translation: "Publicat el "
+- id: "continue_reading"
+  translation: "Continuar llegint"
+
+## 404 Page
+- id: "404_title"
+  translation: "Pàgina no trobada"
+- id: "404_description"
+  translation: "Ho sentim, la pàgina que buscaves no existeix."
+- id: "404_button"
+  translation: "Tornar a l'inici"
