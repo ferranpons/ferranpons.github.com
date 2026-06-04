@@ -30,7 +30,7 @@ draft = false
 <div class="stats-strip">
   <div class="stats-strip__inner">
     <div class="stat-item">
-      <span class="stat-value">10+</span>
+      <span class="stat-value">20+</span>
       <span class="stat-label">Years Experience</span>
     </div>
     <div class="stat-divider" aria-hidden="true"></div>
@@ -129,24 +129,24 @@ text_align="center"
     </div>
   </div>
   <div class="project-card">
-    <h4><a href="https://github.com/ferranpons/llamatik-code" target="_blank" rel="noopener">Llamatik Code</a></h4>
-    <p>Developer tooling built on top of Llamatik — on-device AI assistance powered by local LLMs.</p>
+    <h4><a href="https://plugins.jetbrains.com/plugin/31304-llamatik-code/" target="_blank" rel="noopener">Llamatik Code</a></h4>
+    <p>JetBrains IDE plugin for on-device AI assistance powered by local LLMs via Llamatik.</p>
     <div class="project-tags">
-      <span>KMP</span><span>AI</span><span>Tooling</span><span>On-device</span>
+      <span>JetBrains</span><span>AI</span><span>Plugin</span><span>On-device</span>
     </div>
   </div>
   <div class="project-card">
-    <h4><a href="https://github.com/ferranpons/leku" target="_blank" rel="noopener">Leku</a></h4>
+    <h4><a href="https://github.com/AdevintaSpain/Leku" target="_blank" rel="noopener">Leku</a></h4>
     <p>A location picker library for Android, built to be simple, customisable and production-ready.</p>
     <div class="project-tags">
       <span>Android</span><span>Maps</span><span>Library</span><span>Open Source</span>
     </div>
   </div>
   <div class="project-card">
-    <h4><a href="https://github.com/ferranpons" target="_blank" rel="noopener">Kotlin Multiplatform Libraries</a></h4>
-    <p>KMP libraries, native integration experiments, build tooling and framework distribution work.</p>
+    <h4><a href="https://github.com/MultiplatformKickstarter/Adoptme" target="_blank" rel="noopener">Adoptme</a></h4>
+    <p>A Kotlin Multiplatform template app demonstrating real-world KMP architecture across Android, iOS and Desktop.</p>
     <div class="project-tags">
-      <span>KMP</span><span>Kotlin/Native</span><span>C++</span><span>CMake</span>
+      <span>KMP</span><span>Android</span><span>iOS</span><span>Template</span>
     </div>
   </div>
 </div>
@@ -199,33 +199,3 @@ text_align="center"
 </div>
 {{< /text-section >}}
 
-{{< text-section title="Work with me" sectionId="services" >}}
-<div id="services">
-  <p class="services-intro">I help engineering teams design, build and debug complex mobile, multiplatform and AI-powered systems.</p>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-card__icon" aria-hidden="true">⬡</div>
-      <h4>Kotlin Multiplatform Consulting</h4>
-      <p>Architecture, migrations, shared code strategy and production setup.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon" aria-hidden="true">⚙</div>
-      <h4>Native Integrations</h4>
-      <p>C++, CMake, Kotlin/Native, iOS frameworks, static linking and linker debugging.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon" aria-hidden="true">◈</div>
-      <h4>AI & LLM Applications</h4>
-      <p>On-device AI, llama.cpp integrations, Kotlin SDKs and product-ready AI features.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon" aria-hidden="true">◎</div>
-      <h4>Technical Advisory</h4>
-      <p>Code reviews, architecture reviews, debugging sessions and mentoring.</p>
-    </div>
-  </div>
-  <div class="services-cta">
-    <a href="#contact" class="cta-primary">Let's talk</a>
-  </div>
-</div>
-{{< /text-section >}}

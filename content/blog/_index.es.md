@@ -1,9 +1,8 @@
 ---
-title: "Blog"
+title: "Artículos"
 date: 2023-01-01
 draft: false
+description: "Artículos técnicos sobre Kotlin Multiplatform, IA en dispositivo, ingeniería móvil y tooling para desarrolladores."
 ---
 
-Bienvenido al blog de demostración. Puedes personalizar (o eliminar) esta sección en el archivo `_index.md` de la carpeta `blog`. Puedes [leer sobre cómo organizar contenido en Hugo](https://gohugo.io/content-management/page-bundles/) en la documentación oficial.
-
-Los artículos a continuación se encuentran en la misma carpeta (`blog/`) y pueden estar en [cualesquiera de los formatos que Hugo soporta](https://gohugo.io/content-management/formats/) (Markdown, HTML, Emacs Org Mode, AsciiDoc, Pandoc o reStructuredText).
+Guías prácticas de ingeniería de proyectos reales de mobile, multiplataforma e IA.

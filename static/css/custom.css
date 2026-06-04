@@ -85,9 +85,10 @@ a:focus-visible {
   font-family: "Poppins", ui-sans-serif, system-ui, sans-serif !important;
   font-size: 1.55rem !important;
   font-weight: 700 !important;
-  letter-spacing: -0.02em;
+  letter-spacing: 0em;
   line-height: 1;
   text-decoration: none !important;
+  gap: 0.25em;
 }
 
 .navbar-brand span {
@@ -96,8 +97,11 @@ a:focus-visible {
   font-weight: inherit !important;
 }
 
-.navbar-brand span:first-child { color: var(--accent) !important; }
-.navbar-brand span:last-child  { color: var(--text)   !important; }
+.navbar-brand span:first-child {
+  color: var(--accent) !important;
+  margin-right: 0.18em;
+}
+.navbar-brand span:last-child { color: var(--text) !important; }
 
 /* Fixed header offset */
 body { padding-top: 64px !important; }
@@ -385,12 +389,23 @@ body { padding-top: 64px !important; }
 }
 
 .featured-project-highlights {
-  list-style: none;
-  padding: 0;
+  list-style: none !important;
+  padding: 0 !important;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+}
+
+.featured-project-highlights li,
+.featured-project-highlights--alt li {
+  list-style: none !important;
+}
+
+.featured-project-highlights li::marker,
+.featured-project-highlights--alt li::marker {
+  content: '' !important;
+  display: none !important;
 }
 
 .featured-project-highlights li {
@@ -516,8 +531,8 @@ body { padding-top: 64px !important; }
 }
 
 .speaking-topics {
-  list-style: none;
-  padding: 0;
+  list-style: none !important;
+  padding: 0 !important;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -525,6 +540,11 @@ body { padding-top: 64px !important; }
 }
 
 .speaking-topics li {
+  list-style: none !important;
+}
+
+.speaking-topics li::marker {
+  content: '' !important;
   background: var(--card);
   border: 1px solid var(--card-border);
   color: var(--text-secondary) !important;
@@ -777,14 +797,45 @@ a.writing-card:hover {
 }
 
 /* ============================================================
+   FOOTER — override theme's hardcoded #000 background
+   ============================================================ */
+.footer {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.footer .section,
+.footer .text-section__content {
+  background: transparent !important;
+}
+
+.footer .section__title,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+  color: var(--text) !important;
+  opacity: 1 !important;
+}
+
+.footer p,
+.footer .contact-links-intro {
+  color: var(--text) !important;
+}
+
+.footer .footer__copy,
+.footer .footer__copy span,
+.footer .nav-link {
+  color: var(--text-secondary) !important;
+}
+
+/* ============================================================
    CONTACT LINKS SECTION
    ============================================================ */
+
 .contact-links-section {
   padding: 0.5rem 0 1rem;
 }
 
 .contact-links-intro {
-  color: var(--text-secondary) !important;
+  color: var(--text) !important;
   font-size: 1rem;
   line-height: 1.65;
   max-width: 560px;
