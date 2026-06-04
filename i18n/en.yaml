@@ -1,19 +1,19 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Ferran Pons | Kotlin Multiplatform & AI Engineer"
 - id: "meta_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
 - id: "meta_keywords"
-  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+  translation: "Kotlin Multiplatform, KMP, Android Engineer, iOS Engineer, Mobile Engineer, Kotlin Native, C++, CMake, AI Engineer, LLM, llama.cpp, on-device AI, Ferran Pons"
 - id: "meta_author"
-  translation: "Adrián Moreno Peña"
+  translation: "Ferran Pons"
 - id: "meta_image"
-  translation: "/img/general/og-image.jpg"
+  translation: "/img/og-img.png"
 
 ## Header
 
 - id: "logo_alt"
-  translation: "Adritian logo"
+  translation: "Ferran Pons"
 
 - id: "logo_text1"
   translation: "Ferran"
@@ -30,7 +30,7 @@
 
 ## Footer
 - id: "footer_notice"
-  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+  translation: "© Ferran Pons. All rights reserved."
 
 - id: "language"
   translation: "Language"
@@ -47,10 +47,10 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Ferran Pons | Kotlin Multiplatform & AI Engineer"
 
 - id: "head_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
 
 
 ## Blog
@@ -66,8 +66,7 @@
 ## 404 Page
 - id: "404_title"
   translation: "Page not found"
-- id: "404_description"  
+- id: "404_description"
   translation: "Sorry, but the page you were looking for could not be found."
 - id: "404_button"
   translation: "Back to homepage"
-

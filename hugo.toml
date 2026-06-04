@@ -1,5 +1,5 @@
 baseURL = "https://www.ferranpons.com/"
-title = "Ferran Pons"
+title = "Ferran Pons | Kotlin Multiplatform & AI Engineer"
 languageCode = "en"
 
 # Exclude footer section from generating list pages (index.html and index.xml)
@@ -63,19 +63,29 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Adritian - a high performance hugo theme by Adrián Moreno'
-description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
+title = 'Ferran Pons | Kotlin Multiplatform & AI Engineer'
+description = 'Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications.'
 images = ['/img/og-img.png']
 sections = [
   "showcase",
   "about",
-  "education",
-  "experience",
-  "client-and-work",
-  "testimonial",
   "contact",
-  "newsletter",
 ]
+
+[params.seo]
+siteName = "Ferran Pons"
+siteDescription = "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
+siteImage = "/img/og-img.png"
+
+[params.seo.person]
+name = "Ferran Pons"
+url = "https://www.ferranpons.com/"
+image = "/images/showcase/ferran_profile_image2cropped.png"
+sameAs = [
+  "https://github.com/ferranpons",
+  "https://www.linkedin.com/in/ferranpons/",
+]
+
 # If you want to display an image logo in the header, you can add it here
 # logo = '/img/hugo.svg'
 
@@ -134,54 +144,52 @@ name = 'About'
 URL = '#about'
 weight = 2
 [[languages.en.menus.header]]
-name = 'Skills'
-URL = '/skills'
+name = 'Projects'
+URL = '#portfolio'
 weight = 3
 [[languages.en.menus.header]]
-name = 'Portfolio'
-URL = '#portfolio'
+name = 'Writing'
+URL = '/blog'
 weight = 4
-#  [[languages.en.menus.header]]
-#  name = "Experience"
-#  URL = "#experience"
-#  weight = 4
-
-[[languages.en.menus.header]]
-name = "How to"
-URL = "/blog"
-weight = 5
-
 [[languages.en.menus.header]]
 pre = "email"
-name = "email"
+name = "Contact"
 URL = "#contact"
-weight = 6
-
+weight = 5
 [[languages.en.menus.header]]
 pre = "search"
 name = "Search"
 URL = "/search"
-weight = 7
+weight = 5
 
 [[languages.en.menus.footer]]
 name = "Home"
 URL = "/"
 weight = 1
-
 [[languages.en.menus.footer]]
 name = "About"
 URL = "#about"
 weight = 2
-
 [[languages.en.menus.footer]]
-name = "Portfolio"
+name = "Projects"
 URL = "#portfolio"
 weight = 3
-
+[[languages.en.menus.footer]]
+name = "Writing"
+URL = "/blog"
+weight = 4
 [[languages.en.menus.footer]]
 name = "Contact"
 URL = "#contact"
-weight = 4
+weight = 5
+[[languages.en.menus.footer]]
+name = "GitHub"
+URL = "https://github.com/ferranpons"
+weight = 6
+[[languages.en.menus.footer]]
+name = "LinkedIn"
+URL = "https://www.linkedin.com/in/ferranpons/"
+weight = 7
 
 
 [languages.es]

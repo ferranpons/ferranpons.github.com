@@ -1,31 +1,488 @@
+/* ============================================================
+   Ferran Pons — Personal Brand CSS
+   ============================================================ */
 
-/* Custom overrides for Ferran Pons site */
-:root {
+/* ---------- Dark mode (default) ---------- */
+:root,
+html[data-bs-theme="dark"] {
   --accent: #6C7DFF;
+  --accent-hover: #5567ee;
   --bg: #0f1720;
+  --bg-section: #111d2b;
   --muted: #9aa4b2;
   --card: #0b1220;
+  --card-border: rgba(108,125,255,0.18);
+  --text: #e6eef8;
+  --text-secondary: #b0bec8;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.5);
+  --shadow-hover: 0 8px 32px rgba(108,125,255,0.25);
+  --transition: 0.2s ease;
+  --badge-bg: rgba(108,125,255,0.12);
+  --badge-border: rgba(108,125,255,0.25);
 }
+
+/* ---------- Light mode ---------- */
+html[data-bs-theme="light"] {
+  --accent: #4f5fe8;
+  --accent-hover: #3d4ec6;
+  --bg: #f5f7fc;
+  --bg-section: #edf0f8;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --card-border: rgba(79,95,232,0.18);
+  --text: #111827;
+  --text-secondary: #374151;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-hover: 0 6px 24px rgba(79,95,232,0.18);
+  --badge-bg: rgba(79,95,232,0.08);
+  --badge-border: rgba(79,95,232,0.2);
+}
+
+/* ---------- Base ---------- */
 body {
-background: var(--bg); color: #e6eef8;
-font-family: "Poppins",
-               ui-sans-serif,
-               system-ui,
-               -apple-system,
-               "Segoe UI",
-               Roboto,
-               "Helvetica Neue",
-               Arial;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-h1,h2,h3 { color: #fff; font-weight: 700; }
-a { color: var(--accent); text-decoration: none; }
-.showcase { padding: 4rem 0; }
-.showcase .subtitle { color: var(--muted); margin-top: 0.5rem; }
-.section { padding: 3rem 0; }
-.feature-list { display:flex; gap:1.5rem; flex-wrap:wrap; }
-.feature { background: var(--card); padding:1rem; border-radius:8px; min-width:240px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
-.cta-primary { background: var(--accent); color: white; padding: 0.6rem 1rem; border-radius:6px; display:inline-block; }
-.meta-badges { color: var(--muted); margin-top:0.5rem; }
-.selected-work .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:1rem; border-radius:8px; margin-bottom:1rem; }
-.footer-links a { margin-right:1rem; color: var(--muted); }
-@media(max-width:800px){ .feature-list{flex-direction:column;} }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text) !important;
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ---------- Header logo — script font ---------- */
+.navbar-brand span {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+/* First span (Ferran) gets the accent colour, second (Pons) is text colour */
+.navbar-brand span:first-child {
+  color: var(--accent) !important;
+}
+
+.navbar-brand span:last-child {
+  color: var(--text) !important;
+}
+
+/* ---------- Hero title/subtitle swap ---------- */
+/* title slot holds the role (h1), subtitle slot holds the name (h2) — invert visual weights */
+.rad-showcase h1.display-1 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 500;
+  color: var(--muted) !important;
+  margin-bottom: 0.25rem;
+}
+
+.rad-showcase h2.display-5 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--text) !important;
+  margin-bottom: 1rem;
+}
+
+/* Hide subtitle when empty */
+.rad-showcase h2.display-5:empty {
+  display: none;
+}
+
+/* ---------- Rounded images ---------- */
+.profile-image img,
+.profile-image picture,
+.about-section img,
+.about-section picture,
+.speaking-image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* picture element itself needs radius + clip */
+.profile-image picture {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ---------- Sections ---------- */
+.showcase {
+  padding: 5rem 0 3rem;
+}
+
+.showcase .subtitle {
+  color: var(--muted);
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* ---------- CTAs ---------- */
+.cta-primary {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+  text-decoration: none !important;
+}
+
+.cta-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+  color: #fff !important;
+}
+
+.cta-primary:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--accent) !important;
+  padding: 0.65rem 1.3rem;
+  border-radius: var(--radius);
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid var(--accent);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+  text-decoration: none !important;
+}
+
+.cta-secondary:hover {
+  background: var(--accent);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.cta-secondary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.hero-secondary-cta {
+  margin-top: 1.2rem;
+}
+
+/* ---------- Capabilities (feature-list) ---------- */
+.feature-list {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.feature {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  min-width: 220px;
+  flex: 1;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.feature:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.feature strong {
+  color: var(--text) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.meta-badges {
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+
+/* ---------- Featured Project ---------- */
+.featured-project {
+  background: linear-gradient(135deg, var(--card) 0%, var(--badge-bg) 100%);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+}
+
+.featured-project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.featured-project-title {
+  color: var(--text) !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.featured-project-badge {
+  background: var(--badge-bg);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  border: 1px solid var(--badge-border);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.featured-project-description {
+  color: var(--text-secondary) !important;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.featured-project-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.featured-project-highlights li {
+  background: var(--badge-bg);
+  color: var(--accent);
+  border: 1px solid var(--badge-border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+/* ---------- Projects grid ---------- */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.project-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h4 a {
+  color: var(--text) !important;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.project-card h4 a:hover {
+  color: var(--accent) !important;
+}
+
+.project-card p {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ---------- Speaking section ---------- */
+.speaking-section {
+  margin-top: 1rem;
+}
+
+.speaking-intro {
+  color: var(--text-secondary) !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.speaking-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.speaking-topics li {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary) !important;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.speaking-image-wrap {
+  margin-top: 1.5rem;
+}
+
+.speaking-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Services (Work with me) ---------- */
+.services-intro {
+  color: var(--text-secondary) !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.service-card h4 {
+  color: var(--text) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  color: var(--text-secondary) !important;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.services-cta {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Selected work cards ---------- */
+.selected-work .card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+/* ---------- Footer links ---------- */
+.footer-links a {
+  margin-right: 1rem;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .feature-list {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project {
+    padding: 1.5rem;
+  }
+
+  .featured-project-title {
+    font-size: 1.2rem;
+  }
+
+  .showcase {
+    padding: 3rem 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-primary,
+  .cta-secondary {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-secondary-cta {
+    margin-top: 0.75rem;
+  }
+}
