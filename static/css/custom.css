@@ -797,11 +797,10 @@ a.writing-card:hover {
 }
 
 /* ============================================================
-   FOOTER — override theme's hardcoded #000 background
+   FOOTER — dark background, light text always
    ============================================================ */
 .footer {
-  background-color: var(--bg) !important;
-  color: var(--text) !important;
+  background-color: #0a0e14 !important;
 }
 
 .footer .section,
@@ -809,21 +808,42 @@ a.writing-card:hover {
   background: transparent !important;
 }
 
+/* All text in footer must be light regardless of theme toggle */
 .footer .section__title,
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
-  color: var(--text) !important;
-  opacity: 1 !important;
+  color: #e6eef8 !important;
 }
 
 .footer p,
 .footer .contact-links-intro {
-  color: var(--text) !important;
+  color: #b0bec8 !important;
 }
 
-.footer .footer__copy,
 .footer .footer__copy span,
 .footer .nav-link {
-  color: var(--text-secondary) !important;
+  color: #9aabb8 !important;
+}
+
+.footer .nav-link:hover {
+  color: #6C7DFF !important;
+}
+
+/* Contact link cards in footer stay readable on dark bg */
+.footer .contact-link-card {
+  background: #161d27 !important;
+  border-color: rgba(108,125,255,0.18) !important;
+}
+
+.footer .contact-link-card__label {
+  color: #8b98a8 !important;
+}
+
+.footer .contact-link-card__value {
+  color: #e6eef8 !important;
+}
+
+.footer .contact-link-card:hover {
+  border-color: #6C7DFF !important;
 }
 
 /* ============================================================
