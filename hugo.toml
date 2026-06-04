@@ -1,5 +1,5 @@
 baseURL = "https://www.ferranpons.com/"
-title = "Ferran Pons | Kotlin Multiplatform & AI Engineer"
+title = "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
 languageCode = "en"
 
 # Exclude footer section from generating list pages (index.html and index.xml)
@@ -63,8 +63,8 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Ferran Pons | Kotlin Multiplatform & AI Engineer'
-description = 'Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications.'
+title = 'Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer'
+description = 'Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications.'
 images = ['/img/og-img.png']
 sections = [
   "showcase",
@@ -74,7 +74,7 @@ sections = [
 
 [params.seo]
 siteName = "Ferran Pons"
-siteDescription = "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
+siteDescription = "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications."
 siteImage = "/img/og-img.png"
 
 [params.seo.person]

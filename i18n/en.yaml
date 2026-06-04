@@ -1,10 +1,10 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Ferran Pons | Kotlin Multiplatform & AI Engineer"
+  translation: "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
 - id: "meta_description"
-  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications."
 - id: "meta_keywords"
-  translation: "Kotlin Multiplatform, KMP, Android Engineer, iOS Engineer, Mobile Engineer, Kotlin Native, C++, CMake, AI Engineer, LLM, llama.cpp, on-device AI, Ferran Pons"
+  translation: "Ferran Pons, Kotlin Multiplatform, KMP, Kotlin Native, Android Engineer, iOS Engineer, Mobile Engineer, Native C++, CMake, static linking, linker debugging, AI Engineer, LLM, llama.cpp, on-device AI"
 - id: "meta_author"
   translation: "Ferran Pons"
 - id: "meta_image"
@@ -13,7 +13,7 @@
 ## Header
 
 - id: "logo_alt"
-  translation: "Ferran Pons"
+  translation: "Ferran Pons — Kotlin Multiplatform & AI Engineer"
 
 - id: "logo_text1"
   translation: "Ferran"
@@ -51,10 +51,10 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Ferran Pons | Kotlin Multiplatform & AI Engineer"
+  translation: "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
 
 - id: "head_description"
-  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, AI integrations, on-device LLMs and production-grade mobile applications."
+  translation: "Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications."
 
 
 ## Blog
