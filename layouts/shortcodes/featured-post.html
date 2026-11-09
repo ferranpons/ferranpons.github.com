@@ -1,0 +1,32 @@
+{{- /*
+  Renders the featured blog post card(s) on the homepage.
+
+  Front matter on a blog post:
+    featured: true          # opt in (also used by the theme's blog list)
+    featured_weight: 1      # lower = shown first; posts without it come after, newest first
+    featured_image: /img/blog/xyz.jpg       # optional (falls back to images[0])
+    featured_image_alt: "Descriptive alt"   # optional
+
+  Usage: {{< featured-post >}} or {{< featured-post count="2" >}}
+  Only posts in the current language are considered.
+*/ -}}
+{{- $count := int (.Get "count" | default 1) -}}
+{{- $featured := where (where site.RegularPages "Section" "blog") "Params.featured" true -}}
+{{- $weighted := where $featured "Params.featured_weight" "ne" nil -}}
+{{- $unweighted := where $featured "Params.featured_weight" "eq" nil -}}
+{{- $ordered := (sort $weighted "Params.featured_weight") | append ($unweighted.ByDate.Reverse) -}}
+{{- range first $count $ordered -}}
+{{- $post := . -}}
+{{- $image := .Params.featured_image | default (index (.Params.images | default slice) 0) -}}
+<a href="{{ .RelPermalink }}" class="featured-post">
+{{- with $image }}
+<div class="featured-post__media"><img src="{{ . }}" alt="{{ $post.Params.featured_image_alt | default $post.Title }}" width="1200" height="630" loading="lazy" decoding="async"></div>
+{{- end }}
+<div class="featured-post__body">
+<div class="featured-post__meta"><span class="featured-post__badge">Featured</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
+<h3 class="featured-post__title">{{ .Title }}</h3>
+<p class="featured-post__desc">{{ .Description | default (.Summary | plainify | truncate 160) }}</p>
+<span class="featured-post__cta">Read article →</span>
+</div>
+</a>
+{{- end -}}

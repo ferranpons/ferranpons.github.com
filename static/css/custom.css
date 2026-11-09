@@ -638,6 +638,78 @@ a.writing-card:hover {
   margin-top: 1.5rem;
 }
 
+/* Featured post (homepage) — reuses writing-card tokens */
+.featured-post {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-top: 1.5rem;
+  text-decoration: none !important;
+  color: var(--text) !important;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+a.featured-post:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--text) !important;
+}
+.featured-post__media { background: #0d1117; }
+.featured-post__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1200 / 630;
+}
+.featured-post__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured-post__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted) !important;
+  margin-bottom: 0.6rem;
+}
+.featured-post__badge {
+  background: var(--badge-bg);
+  color: var(--accent) !important;
+  border: 1px solid var(--badge-border);
+  border-radius: 20px;
+  padding: 0.15rem 0.65rem;
+}
+.featured-post__title {
+  font-size: 1.15rem !important;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text) !important;
+  margin-bottom: 0.5rem;
+}
+.featured-post__desc {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+.featured-post__cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent) !important;
+}
+
 /* ============================================================
    SERVICES
    ============================================================ */
@@ -927,6 +999,7 @@ a.writing-card:hover {
   .services-grid   { grid-template-columns: 1fr; }
   .project-list    { grid-template-columns: 1fr; }
   .writing-grid    { grid-template-columns: 1fr; }
+  .featured-post   { grid-template-columns: 1fr; }
 
   .featured-project { padding: 1.5rem; }
   .featured-project-title { font-size: 1.1rem; }

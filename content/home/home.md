@@ -5,10 +5,10 @@ draft = false
 +++
 
 {{< showcase-section
-    title="Kotlin Multiplatform, Native C++ & AI Engineer"
+    title="Kotlin Multiplatform, AI Engineer"
 
 
-    description="I help teams build production-grade mobile, multiplatform and AI-powered applications — from Kotlin Multiplatform apps and native C++ integrations to on-device LLM tooling."
+    description="I help teams build production-grade mobile, multiplatform and AI-powered applications. From Kotlin Multiplatform apps to on-device LLM tooling."
     imgSrc="images/showcase/ferran_profile_image2cropped.png"
     imgScale="0.5"
     sectionId="hero"
@@ -173,6 +173,7 @@ text_align="center"
 {{< /text-section >}}
 
 {{< text-section title="Latest Writing" sectionId="writing" >}}
+{{< featured-post >}}
 <div class="writing-grid">
   <a href="/blog/how-to-run-llms-offline-on-android-kotlin/" class="writing-card">
     <div class="writing-card__meta">Android · AI · LLMs</div>
