@@ -53,7 +53,7 @@ draft = false
 
 {{< about-section
 title="About"
-content="I specialize in building high-performance mobile and multiplatform applications. Over the last decade, I've worked across Android, iOS, Kotlin Multiplatform and native C++ systems, helping teams solve difficult technical challenges involving performance, interoperability and scalability. More recently, I focus on AI-powered applications and on-device LLM integrations through open-source projects such as Llamatik."
+content="Ferran Pons is a senior Kotlin Multiplatform and AI engineer, and the creator of Llamatik, an open-source library for running LLMs on-device, winner of a 2026 Kotlin Foundation Grant. I specialize in building high-performance mobile and multiplatform applications. Over the last decade, I've worked across Android, iOS, Kotlin Multiplatform and native C++ systems, helping teams solve difficult technical challenges involving performance, interoperability and scalability. More recently, I focus on AI-powered applications and on-device LLM integrations through open-source projects such as Llamatik."
 button_icon="icon-user"
 button_url="/skills"
 imgSrc="images/about/ferran_speaker.webp"

@@ -15,3 +15,7 @@
 <link rel="stylesheet" href="/css/custom.css">
 <link rel="stylesheet" href="/css/refined.css">
 <script src="/js/site.js" defer></script>
+
+{{- if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "SoftwareSourceCode" "name" "Llamatik" "description" "Open-source Kotlin Multiplatform SDK for running large language models (llama.cpp) on-device on Android, iOS and desktop." "codeRepository" "https://github.com/llamatik/Llamatik" "url" "https://www.llamatik.com/" "programmingLanguage" (slice "Kotlin" "C++") "runtimePlatform" (slice "Android" "iOS" "JVM") "author" (dict "@id" (printf "%s#person" .Site.Home.Permalink)) | jsonify | safeJS }}</script>
+{{- end }}
