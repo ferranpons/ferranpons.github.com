@@ -1,6 +1,7 @@
 baseURL = "https://www.ferranpons.com/"
 title = "Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer"
 languageCode = "en"
+enableRobotsTXT = true
 
 # Exclude footer section from generating list pages (index.html and index.xml)
 [outputs]
@@ -82,9 +83,14 @@ siteImage = "/img/og-img.png"
 name = "Ferran Pons"
 url = "https://www.ferranpons.com/"
 image = "/images/showcase/ferran_profile_image2cropped.png"
+jobTitle = "Senior Kotlin Multiplatform & AI Engineer"
+description = "Ferran Pons is a senior mobile engineer and the creator of Llamatik, an open-source Kotlin Multiplatform library for running LLMs on-device."
+knowsAbout = ["Kotlin Multiplatform", "Kotlin/Native", "Android", "iOS", "C++", "llama.cpp", "On-device LLMs", "Mobile architecture"]
 sameAs = [
   "https://github.com/ferranpons",
   "https://www.linkedin.com/in/ferranpons/",
+  "https://twitter.com/ponsaffair",
+  "https://www.llamatik.com/",
 ]
 
 # If you want to display an image logo in the header, you can add it here

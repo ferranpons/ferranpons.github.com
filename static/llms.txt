@@ -1,0 +1,17 @@
+# Ferran Pons
+
+> Ferran Pons is a senior mobile engineer (20+ years) specialised in Kotlin Multiplatform, Kotlin/Native, native C++ and on-device AI. He is the creator of Llamatik, an open-source Kotlin Multiplatform library for running large language models (llama.cpp) directly on Android, iOS and desktop, and a 2026 Kotlin Foundation Grant winner.
+
+## Key links
+- [Website](https://www.ferranpons.com/): portfolio, experience and contact
+- [Llamatik](https://www.llamatik.com/): open-source on-device LLM tooling for Kotlin Multiplatform
+- [GitHub](https://github.com/ferranpons)
+- [LinkedIn](https://www.linkedin.com/in/ferranpons/)
+
+## Blog
+- [Llamatik Wins a 2026 Kotlin Foundation Grant](https://www.ferranpons.com/blog/llamatik-kotlin-foundation-grant-2026/): the story behind Llamatik and what's next
+- [How to run LLMs offline on Android with Kotlin](https://www.ferranpons.com/blog/how-to-run-llms-offline-on-android-kotlin/)
+- [MonoGame on Raspberry Pi](https://www.ferranpons.com/blog/monogame-on-raspberry-pi/)
+
+## Expertise
+Kotlin Multiplatform, Kotlin/Native, Android, iOS, C++/CMake, llama.cpp, on-device LLMs, mobile architecture.

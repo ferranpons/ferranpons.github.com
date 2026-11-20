@@ -35,6 +35,16 @@
 {{- /* Site override: use the page description when available (theme always used the site-wide one). */ -}}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "head_description" }}{{ end }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
+{{- if .IsTranslated }}
+  {{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+  {{- end }}
+  {{- range .AllTranslations }}
+    {{- if eq .Language.Lang "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end }}
+  {{- end }}
+{{- end }}
 {{/* RSS Feed Discovery Links */}}
 {{- $siteTitle := i18n "head_title" | default .Site.Title -}}
 {{- with .Site.Home.OutputFormats.Get "RSS" }}
