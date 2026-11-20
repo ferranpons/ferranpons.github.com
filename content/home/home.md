@@ -21,7 +21,7 @@ draft = false
 {{< /platform-links >}}
 
 <div class="hero-cta-group">
-  <a href="https://github.com/ferranpons/llama-kmp" class="cta-primary" target="_blank" rel="noopener">Explore Llamatik</a>
+  <a href="https://www.llamatik.com/" class="cta-primary" target="_blank" rel="noopener">Explore Llamatik</a>
   <a href="#portfolio" class="cta-secondary">View projects</a>
 </div>
 
@@ -82,42 +82,7 @@ text_align="center"
 </div>
 {{< /text-section >}}
 
-{{< text-section title="Featured Project" sectionId="portfolio" >}}
-<div id="portfolio" class="featured-project">
-  <div class="featured-project-header">
-    <h3 class="featured-project-title">Llamatik — Kotlin LLM tooling</h3>
-    <span class="featured-project-badge">Open Source</span>
-  </div>
-  <p class="featured-project-description">Open-source Kotlin-first SDK for building AI-powered applications across Android, iOS and Desktop using Kotlin Multiplatform and llama.cpp.</p>
-
-  <div class="featured-project-cols">
-    <div class="featured-project-col">
-      <p class="featured-project-col-title">Tech stack</p>
-      <ul class="featured-project-highlights">
-        <li>Kotlin Multiplatform</li>
-        <li>Kotlin/Native</li>
-        <li>Native C++</li>
-        <li>llama.cpp</li>
-        <li>Android</li>
-        <li>iOS</li>
-        <li>Desktop</li>
-      </ul>
-    </div>
-    <div class="featured-project-col">
-      <p class="featured-project-col-title">Engineering challenges</p>
-      <ul class="featured-project-highlights featured-project-highlights--alt">
-        <li>Native bindings</li>
-        <li>Static linking</li>
-        <li>Cross-platform AI runtime</li>
-        <li>iOS framework distribution</li>
-        <li>Production SDK design</li>
-      </ul>
-    </div>
-  </div>
-
-  <a href="https://github.com/ferranpons/llama-kmp" class="cta-primary" target="_blank" rel="noopener">View on GitHub</a>
-</div>
-{{< /text-section >}}
+{{< featured-project >}}
 
 {{< text-section title="Experience" sectionId="experience" >}}
 <p class="section-intro">Two decades building software, from game development and web platforms to production Android apps and open-source AI tooling.</p>
@@ -128,8 +93,8 @@ text_align="center"
 {{< text-section title="Projects" >}}
 <div class="project-list">
   <div class="project-card">
-    <h4><a href="https://github.com/ferranpons/llama-kmp" target="_blank" rel="noopener">Llamatik — Kotlin LLM tooling</a></h4>
-    <p>Open-source SDK for building LLM-powered applications with Kotlin Multiplatform and llama.cpp.</p>
+    <h4><a href="https://www.llamatik.com/" target="_blank" rel="noopener">Llamatik</a></h4>
+    <p>Local-first AI platform and Kotlin Multiplatform SDK: chat, vision, voice, image and video generation on-device.</p>
     <div class="project-tags">
       <span>KMP</span><span>llama.cpp</span><span>AI</span><span>Android</span><span>iOS</span>
     </div>

@@ -25,11 +25,11 @@
       <p class="timeline__summary">{{ .summary }}</p>
       {{- with .highlights }}<ul class="timeline__highlights">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
       {{- with .products }}
-      <ul class="timeline__products" aria-label="Products">
+      <div class="timeline__products" role="list" aria-label="Products">
         {{- range . }}{{ $prod := . }}{{ with resources.Get .image }}
-        <li><img src="{{ (.Fill "260x146 center webp").RelPermalink }}" alt="" width="130" height="73" loading="lazy" decoding="async"><span>{{ $prod.name }}</span></li>
+        <figure role="listitem"><img src="{{ (.Fill "260x146 center webp").RelPermalink }}" alt="" width="130" height="73" loading="lazy" decoding="async"><figcaption>{{ $prod.name }}</figcaption></figure>
         {{- end }}{{ end }}
-      </ul>
+      </div>
       {{- end }}
       {{- with .tags }}<div class="project-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
     </div>

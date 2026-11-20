@@ -1,0 +1,101 @@
+{{- /* Llamatik showcase. Content mirrors https://www.llamatik.com — update it there first. */ -}}
+{{- $cover := resources.Get "images/works/llamatik_linkedin_cover_image.png" -}}
+<section id="featured" class="section section--border-bottom rad-animation-group section--padding">
+<div class="container">
+<div class="row rad-fade-down">
+<div class="col-12">
+<h2 class="section__title">Featured Project</h2>
+<div class="text-section__content">
+<article class="showcase-project" id="portfolio">
+<div class="showcase-project__top">
+<div class="showcase-project__intro">
+<div class="showcase-project__badges">
+<span>Open source · MIT</span>
+<span class="is-accent">2026 Kotlin Foundation Grant</span>
+</div>
+<h3 class="showcase-project__title">Llamatik</h3>
+<p class="showcase-project__tagline">Private AI that runs on your device.</p>
+<p class="showcase-project__desc">A local-first AI platform for chat, vision, voice, image and video generation, with no cloud connection or user account required. Models run entirely on-device through optimized C++ backends wrapped in Kotlin Multiplatform bindings.</p>
+<div class="showcase-project__actions">
+<a href="https://www.llamatik.com/" class="cta-primary" target="_blank" rel="noopener">Visit llamatik.com</a>
+<a href="https://docs.llamatik.com" class="cta-secondary" target="_blank" rel="noopener">Documentation</a>
+<a href="https://github.com/ferranpons/Llamatik" class="cta-secondary" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+{{- with $cover }}
+<a class="showcase-project__visual" href="https://www.llamatik.com/" target="_blank" rel="noopener" aria-label="Llamatik website">
+<img src="{{ (.Resize "900x webp").RelPermalink }}" alt="Llamatik: build LLM-powered apps in Kotlin" width="900" height="{{ div (mul 900 .Height) .Width }}" loading="lazy" decoding="async">
+</a>
+{{- end }}
+</div>
+<div class="showcase-project__features" role="list" aria-label="What Llamatik can do">
+<div role="listitem"><strong>Chat</strong><span>Streaming conversations with GGUF model selection.</span></div>
+<div role="listitem"><strong>Vision</strong><span>On-device image and document analysis.</span></div>
+<div role="listitem"><strong>Voice</strong><span>Offline speech transcription with Whisper.</span></div>
+<div role="listitem"><strong>Images</strong><span>Text-to-image and image-to-image generation.</span></div>
+<div role="listitem"><strong>Video</strong><span>Text-to-video with H.264 encoding.</span></div>
+<div role="listitem"><strong>Agents</strong><span>Planner, tools, permissions and audit logs.</span></div>
+<div role="listitem"><strong>Documents</strong><span>Local RAG with chunking and embeddings.</span></div>
+<div role="listitem"><strong>Multi-device</strong><span>Serve models over your local network via mDNS.</span></div>
+</div>
+<div class="showcase-project__grid">
+<div class="showcase-project__col">
+<h4 class="showcase-project__label">Runs on</h4>
+<div class="project-tags">
+<span>Android 8+</span><span>iOS 16.6+</span><span>macOS</span><span>Windows 10+</span><span>Linux</span><span>Web (WASM)</span>
+</div>
+<h4 class="showcase-project__label">Native engines</h4>
+<div class="showcase-project__engines" role="list">
+<div role="listitem"><code>llama.cpp</code><span>text generation</span></div>
+<div role="listitem"><code>whisper.cpp</code><span>speech-to-text</span></div>
+<div role="listitem"><code>stable-diffusion.cpp</code><span>image generation</span></div>
+</div>
+<h4 class="showcase-project__label">Modules</h4>
+<div class="showcase-project__engines" role="list">
+<div role="listitem"><code>com.llamatik:core</code></div>
+<div role="listitem"><code>com.llamatik:sdk</code></div>
+<div role="listitem"><code>com.llamatik:sdk-agent</code></div>
+<div role="listitem"><code>com.llamatik:server</code></div>
+</div>
+<h4 class="showcase-project__label">Engineering focus</h4>
+<div class="project-tags">
+<span>Native bindings</span><span>Static linking</span><span>Cross-platform AI runtime</span><span>iOS framework distribution</span><span>SDK design</span>
+</div>
+</div>
+<div class="showcase-project__col">
+<h4 class="showcase-project__label">Build an agent in a few lines</h4>
+<pre class="code"><code><span class="c">// commonMain.dependencies</span>
+<span class="k">implementation</span>(<span class="s">"com.llamatik:sdk-agent:&lt;version&gt;"</span>)
+
+<span class="k">val</span> agent = <span class="f">Agent</span> {
+    <span class="f">name</span>(<span class="s">"Kotlin Assistant"</span>)
+    <span class="f">systemPrompt</span>(<span class="s">"You are an expert Kotlin developer."</span>)
+    <span class="f">temperature</span>(<span class="n">0.7f</span>)
+    <span class="f">memory</span>(<span class="f">SlidingWindowMemory</span>(windowSize = <span class="n">20</span>))
+    <span class="f">tools</span> { <span class="f">builtIns</span>() }
+}
+
+agent.<span class="f">stream</span>(<span class="s">"What is 17% of 2,340?"</span>).<span class="f">collect</span> { chunk <span class="k">-&gt;</span>
+    <span class="k">when</span> (chunk) {
+        <span class="k">is</span> AgentStreamChunk.Delta <span class="k">-&gt;</span> <span class="f">print</span>(chunk.text)
+        <span class="k">is</span> AgentStreamChunk.Done  <span class="k">-&gt;</span> <span class="f">println</span>()
+        <span class="k">else</span> <span class="k">-&gt;</span> Unit
+    }
+}</code></pre>
+</div>
+</div>
+<nav class="showcase-project__links" aria-label="Llamatik links">
+<a href="https://www.llamatik.com/prompt/" target="_blank" rel="noopener">Web app</a>
+<a href="https://play.google.com/store/apps/details?id=com.llamatik.app.android" target="_blank" rel="noopener">Google Play</a>
+<a href="https://apple.co/3Md7EIh" target="_blank" rel="noopener">App Store</a>
+<a href="https://central.sonatype.com/artifact/com.llamatik/core" target="_blank" rel="noopener">Maven Central</a>
+<a href="https://github.com/ferranpons/Llamatik-server" target="_blank" rel="noopener">Server</a>
+<a href="https://www.llamatik.com/blog/" target="_blank" rel="noopener">Blog</a>
+<a href="https://discord.gg/QVcc6Bcd57" target="_blank" rel="noopener">Discord</a>
+</nav>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>

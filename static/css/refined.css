@@ -159,10 +159,9 @@ html[data-bs-theme="dark"] .timeline__logo--initial { color: var(--accent); }
 .timeline__company a:hover { text-decoration: underline !important; }
 .timeline__summary { color: var(--text-secondary) !important; margin-bottom: .6rem; font-size: .95rem; }
 .timeline__products { list-style: none; display: flex; gap: .8rem; flex-wrap: wrap; margin: .2rem 0 1rem; padding: 0; }
-.timeline__products li { width: 130px; list-style: none !important; }
-.timeline__products li::marker { content: ""; }
+.timeline__products figure { width: 130px; margin: 0; }
 .timeline__products img { display: block; width: 130px; height: 73px; object-fit: cover; border-radius: 8px; border: 1px solid var(--card-border); }
-.timeline__products span { display: block; margin-top: .35rem; font-size: .75rem; line-height: 1.3; color: var(--muted); }
+.timeline__products figcaption { display: block; margin-top: .35rem; font-size: .75rem; line-height: 1.3; color: var(--muted); }
 .timeline__highlights { margin: 0 0 .8rem; padding-left: 1.1rem; font-size: .9rem; color: var(--text); }
 .timeline__highlights li::marker { color: var(--brand-2); }
 @media (max-width: 767px) {
@@ -204,3 +203,49 @@ main h2.section__title::before, .text-section__title::before { content: ""; disp
 .contact-link-card__label { color: var(--accent) !important; }
 .writing-card__cta, .featured-post__cta { color: var(--accent) !important; }
 .project-card h4 a:hover { color: var(--accent) !important; }
+
+/* ---------- Featured project showcase ---------- */
+.showcase-project { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 2.2rem; box-shadow: var(--shadow); }
+.showcase-project__top { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; align-items: center; }
+.showcase-project__badges { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.showcase-project__badges span { font-family: var(--mono); font-size: .72rem; letter-spacing: .04em; padding: .3rem .65rem; border-radius: 6px; background: var(--badge-bg); border: 1px solid var(--badge-border); color: var(--text-secondary); }
+.showcase-project__badges .is-accent { border-color: var(--brand-2); color: var(--accent); }
+.showcase-project__title { font-size: clamp(2rem, 4vw, 3rem) !important; font-weight: 700 !important; letter-spacing: -0.035em; margin: 0 !important; }
+.showcase-project__tagline { font-size: 1.25rem; font-weight: 500; color: var(--accent) !important; margin: .3rem 0 1rem; }
+.showcase-project__desc { color: var(--text-secondary) !important; max-width: 56ch; }
+.showcase-project__actions { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.4rem; }
+.showcase-project__visual { display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); box-shadow: var(--shadow-hover); transition: transform .3s ease; }
+.showcase-project__visual:hover { transform: translateY(-3px); }
+.showcase-project__visual img { display: block; width: 100%; height: auto; }
+
+.showcase-project__features { list-style: none !important; margin: 2.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+.showcase-project__features > div { list-style: none !important; padding: 1rem 1.1rem; border: 1px solid var(--card-border); border-radius: 10px; background: color-mix(in srgb, var(--card) 70%, var(--bg-section)); transition: border-color .2s, transform .2s; }
+.showcase-project__features > div:hover { border-color: var(--brand-2); transform: translateY(-2px); }
+.showcase-project__features strong { display: block; font-size: .95rem; margin-bottom: .25rem; }
+.showcase-project__features strong::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: .5rem; border-radius: 2px; background: var(--brand-2); transform: skewX(-20deg); }
+.showcase-project__features span { font-size: .85rem; color: var(--text-secondary); line-height: 1.5; display: block; }
+
+.showcase-project__grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 2.5rem; margin-top: 2.2rem; padding-top: 2rem; border-top: 1px solid var(--card-border); }
+.showcase-project__label { font-family: var(--mono); font-size: .72rem !important; font-weight: 500 !important; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) !important; margin: 1.4rem 0 .6rem !important; }
+.showcase-project__col > .showcase-project__label:first-child { margin-top: 0 !important; }
+.showcase-project__engines { list-style: none !important; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.showcase-project__engines > div { display: flex; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
+.showcase-project__engines code { font-family: var(--mono); font-size: .8rem; color: var(--accent); background: var(--badge-bg); border: 1px solid var(--badge-border); padding: .15rem .5rem; border-radius: 6px; }
+.showcase-project__engines span { font-size: .85rem; color: var(--text-secondary); }
+
+pre.code { margin: 0; padding: 1.2rem 1.3rem; border-radius: 12px; background: #0a1716; border: 1px solid #1c3736; overflow-x: auto; font-size: .8rem; line-height: 1.65; }
+pre.code code { font-family: var(--mono); color: #d7e6e4 !important; background: none !important; padding: 0; white-space: pre; }
+pre.code .c { color: #6c8a88; } pre.code .k { color: #5ddad3; } pre.code .s { color: #f1c27d; }
+pre.code .f { color: #9cc4ff; } pre.code .n { color: #f19cb7; }
+
+.showcase-project__links { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: 1.8rem; padding-top: 1.2rem; border-top: 1px solid var(--card-border); }
+.showcase-project__links a { font-size: .9rem; font-weight: 500; color: var(--accent) !important; }
+.showcase-project__links a::after { content: " ↗"; font-size: .8em; opacity: .7; }
+.showcase-project__links a:hover { text-decoration: underline; }
+
+@media (max-width: 991px) {
+  .showcase-project { padding: 1.4rem; }
+  .showcase-project__top, .showcase-project__grid { grid-template-columns: 1fr; gap: 1.8rem; }
+  .showcase-project__features { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) { .showcase-project__features { grid-template-columns: 1fr; } }
