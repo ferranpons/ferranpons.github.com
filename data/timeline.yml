@@ -1,0 +1,117 @@
+# Career timeline, newest first (by start date). Rendered by the {{< timeline >}} shortcode.
+# Source: LinkedIn Experience section (+ 2014 CV for the Zombusters/Isomatrix details).
+# Fields: period, role, company, location, summary, highlights (list), tags (list),
+#         link (optional URL), logo (optional, path under assets/), image / image_alt (optional banner),
+#         products (optional list of {name, image}). Without a logo, an initial tile is shown.
+- period: "May 2026 – Present"
+  role: "Senior Software Engineer (Android)"
+  company: "Kleinanzeigen"
+  location: "Barcelona · Remote"
+  summary: "Working on the Android app of Germany's leading classifieds marketplace, focusing on professional sellers and business customers."
+  highlights:
+    - "Designing and implementing new Android features on a modern Kotlin architecture"
+    - "Driving technical decisions around scalability, maintainability and performance"
+    - "Improving architecture, code quality and developer productivity; mentoring engineers"
+  tags: ["Kotlin", "Jetpack Compose", "Coroutines", "Flow", "MVVM", "Modularization", "CI/CD"]
+  link: "https://www.kleinanzeigen.de/"
+  logo: "images/experience/kleinanzeigen.png"
+
+- period: "Jul 2025 – Present"
+  role: "Creator & maintainer"
+  company: "Llamatik (open source)"
+  summary: "Open-source Kotlin Multiplatform library that brings local large language models to Android, iOS, desktop and web."
+  highlights:
+    - "Selected as one of five winners of the 2026 Kotlin Foundation Grants ($6,000)"
+    - "Built on llama.cpp with Kotlin-first SDKs"
+  tags: ["Kotlin Multiplatform", "llama.cpp", "On-device AI"]
+  link: "https://www.llamatik.com/"
+  image: "images/works/llamatik_linkedin_cover_image.png"
+  image_alt: "Llamatik: build LLM-powered apps in Kotlin"
+
+- period: "Feb 2019 – Jul 2026"
+  role: "Senior Android Developer"
+  company: "Adevinta Spain"
+  location: "Barcelona"
+  summary: "Senior programmer in the Milanuncios.com mobile team, an online classifieds business. Developed the Android app and open-source libraries, with continuous integration on Travis CI and Git."
+  tags: ["Android", "Kotlin", "Jetpack Compose", "Open source", "Travis CI"]
+  link: "https://www.adevinta.com/"
+  logo: "images/experience/adevinta.png"
+
+- period: "Aug 2016"
+  role: "Creator"
+  company: "Leku (open source)"
+  summary: "Created Leku, a map-based location picker library for Android built on Google Maps, and released it as open source."
+  tags: ["Android", "Google Maps", "Open source"]
+  link: "https://github.com/AdevintaSpain/Leku"
+
+- period: "Aug 2012 – Feb 2019"
+  role: "Mobile Application Developer"
+  company: "Schibsted Spain"
+  location: "Sant Cugat del Vallès"
+  summary: "Senior programmer in the Segundamano.es mobile team, an online classifieds business. Developed the Android and iOS apps (plus Windows Phone and Windows 8) with Jenkins CI, TDD and MVP."
+  highlights:
+    - "Segundamano.es for Android named one of Google's best apps of 2013 and again of 2014"
+  tags: ["Android", "iOS", "TDD", "MVP", "RxJava", "Jenkins", "Travis CI"]
+  products:
+    - { name: "Segundamano for iPhone", image: "images/experience/products/segundamano-iphone.png" }
+    - { name: "Segundamano for Android", image: "images/experience/products/segundamano-android.png" }
+    - { name: "Segundamano for Windows 8", image: "images/experience/products/segundamano-windows8.png" }
+
+- period: "Nov 2011 – Jul 2012"
+  role: "Programmer"
+  company: "E-TIC Sistemes"
+  location: "Greater Barcelona"
+  summary: "Worked for clients such as UPCNet and Anuntis. Developed and maintained collaborative tools at UPCNet (Python), and built the user dashboard and products for the Arts Combinatòries website of the Fundació Antoni Tàpies (Plone, Python, JavaScript)."
+  tags: ["Python", "Plone", "JavaScript"]
+
+- period: "May 2010 – Nov 2011"
+  role: "Game Developer"
+  company: "Retrowax Games"
+  location: "Sant Andreu de Llavaneres"
+  summary: "In charge of design, artwork, planning and development of the multiplatform indie game Zombusters, published on Xbox 360, Windows Phone and PC (Desura, Windows, Windows 8). Built with XNA (C#), Photoshop for pixel art and Audacity for sound."
+  tags: ["C#", "XNA", "Game design"]
+  link: "http://www.zombusters.com/"
+
+- period: "Feb 2009 – May 2010"
+  role: "Programmer"
+  company: "Direla Disc, S.L. (now Zitro)"
+  location: "Sant Cugat del Vallès"
+  summary: "Casino game development in C++."
+  tags: ["C++"]
+  logo: "images/experience/zitro.png"
+
+- period: "Jul 2007 – Oct 2008"
+  role: "Integration Engineer"
+  company: "Electronic Arts"
+  location: "Greater Madrid"
+  summary: "Built build pipelines (NAnt) to integrate text, audio and video into games, developed tools and solved text translation issues in databases."
+  highlights:
+    - "Credited on Burnout Paradise, Dead Space, The Godfather II, Skate 2 and The Simpsons Game"
+  tags: ["NAnt", "Build pipelines", "Tooling", "Localization"]
+  logo: "images/experience/ea.png"
+  products:
+    - { name: "Skate 2", image: "images/experience/products/skate-2.png" }
+    - { name: "The Simpsons Game", image: "images/experience/products/simpsons-game.png" }
+    - { name: "Burnout Paradise", image: "images/experience/products/burnout-paradise.png" }
+
+- period: "Mar 2007 – Jun 2007"
+  role: "Programmer"
+  company: "Direla Disc (now Zitro)"
+  location: "Sant Cugat del Vallès"
+  summary: "Casino game development in C++."
+  tags: ["C++"]
+  logo: "images/experience/zitro.png"
+
+- period: "Feb 2005 – Jan 2007"
+  role: "Senior Analyst & Designer"
+  company: "Guell Consulting"
+  location: "Greater Mataró"
+  summary: "Designed and developed web applications on Zope/Plone, Python and JavaScript, and maintained backends and systems."
+  tags: ["Python", "Zope/Plone", "MySQL", "ZODB", "Ajax"]
+
+- period: "Jul 2004 – Jun 2006"
+  role: "Game Designer"
+  company: "Ikko Studios"
+  location: "Greater Mataró"
+  summary: "In charge of design, artwork, planning and development of the independent PC game Isomatrix, winner of the Ginger Monkey Games comedy contest."
+  tags: ["Game design", "PC"]

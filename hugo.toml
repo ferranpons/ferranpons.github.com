@@ -63,6 +63,7 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
+themeColor = "#004D4A"
 title = 'Ferran Pons | Kotlin Multiplatform, Native C++ & AI Engineer'
 description = 'Senior Mobile and Kotlin Multiplatform Engineer specialized in native C++, Kotlin/Native, AI integrations, on-device LLMs and production-grade mobile applications.'
 images = ['/img/og-img.png']

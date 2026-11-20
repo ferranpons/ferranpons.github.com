@@ -1,0 +1,38 @@
+{{- /* Career timeline from data/timeline.yml. Usage: {{< timeline >}} */ -}}
+<div class="timeline" role="list">
+{{- range site.Data.timeline }}
+{{- $item := . }}
+  <div class="timeline__item" role="listitem">
+    <div class="timeline__period">{{ .period }}</div>
+    <div class="timeline__card">
+      {{- with .image }}{{ with resources.Get . }}
+      <img class="timeline__image" src="{{ (.Resize "720x webp").RelPermalink }}" alt="{{ $item.image_alt | default "" }}" loading="lazy" decoding="async">
+      {{- end }}{{ end }}
+      <div class="timeline__head">
+        {{- with .logo }}{{ with resources.Get . }}
+        <img class="timeline__logo" src="{{ (.Fill "112x112 center webp").RelPermalink }}" alt="" width="56" height="56" loading="lazy" decoding="async">
+        {{- end }}{{ else }}
+        <span class="timeline__logo timeline__logo--initial" aria-hidden="true">{{ substr $item.company 0 1 }}</span>
+        {{- end }}
+        <div>
+          <h4 class="timeline__role">{{ .role }}</h4>
+          <p class="timeline__company">
+            {{- if .link }}<a href="{{ .link }}" target="_blank" rel="noopener">{{ .company }}</a>{{ else }}{{ .company }}{{ end -}}
+            {{- with .location }} · {{ . }}{{ end -}}
+          </p>
+        </div>
+      </div>
+      <p class="timeline__summary">{{ .summary }}</p>
+      {{- with .highlights }}<ul class="timeline__highlights">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      {{- with .products }}
+      <ul class="timeline__products" aria-label="Products">
+        {{- range . }}{{ $prod := . }}{{ with resources.Get .image }}
+        <li><img src="{{ (.Fill "260x146 center webp").RelPermalink }}" alt="" width="130" height="73" loading="lazy" decoding="async"><span>{{ $prod.name }}</span></li>
+        {{- end }}{{ end }}
+      </ul>
+      {{- end }}
+      {{- with .tags }}<div class="project-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+    </div>
+  </div>
+{{- end }}
+</div>

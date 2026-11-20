@@ -8,7 +8,7 @@ draft = false
     title="Kotlin Multiplatform, AI Engineer"
 
 
-    description="I help teams build production-grade mobile, multiplatform and AI-powered applications. From Kotlin Multiplatform apps to on-device LLM tooling."
+    description="I build production-grade mobile, multiplatform and AI-powered applications. From Kotlin Multiplatform apps to on-device LLM tooling."
     imgSrc="images/showcase/ferran_profile_image2cropped.png"
     imgScale="0.5"
     sectionId="hero"
@@ -21,6 +21,7 @@ draft = false
 {{< /platform-links >}}
 
 <div class="hero-cta-group">
+  <a href="https://github.com/ferranpons/llama-kmp" class="cta-primary" target="_blank" rel="noopener">Explore Llamatik</a>
   <a href="#portfolio" class="cta-secondary">View projects</a>
 </div>
 
@@ -118,6 +119,12 @@ text_align="center"
 </div>
 {{< /text-section >}}
 
+{{< text-section title="Experience" sectionId="experience" >}}
+<p class="section-intro">Two decades building software, from game development and web platforms to production Android apps and open-source AI tooling.</p>
+{{< timeline >}}
+<div class="writing-cta"><a href="/files/CV-FerranPons-ENG.pdf" class="cta-secondary" target="_blank" rel="noopener">Download CV (PDF)</a> <a href="https://www.linkedin.com/in/ferranpons/" class="cta-secondary" target="_blank" rel="noopener">Full history on LinkedIn</a></div>
+{{< /text-section >}}
+
 {{< text-section title="Projects" >}}
 <div class="project-list">
   <div class="project-card">
@@ -196,6 +203,19 @@ text_align="center"
 </div>
 <div class="writing-cta">
   <a href="/blog" class="cta-secondary">View all writing</a>
+</div>
+{{< /text-section >}}
+
+{{< text-section title="Support my work" sectionId="sponsor" >}}
+<div class="sponsor-card">
+  <div>
+    <h3 class="sponsor-card__title">Sponsor open-source development</h3>
+    <p>Llamatik, Leku and Adoptme are built and maintained in the open. If they save you time or you want to see on-device AI for Kotlin keep growing, sponsorship helps me dedicate more time to them.</p>
+  </div>
+  <div class="sponsor-card__actions">
+    <a href="https://github.com/sponsors/ferranpons" class="cta-primary" target="_blank" rel="noopener">Sponsor on GitHub</a>
+    <a href="https://github.com/ferranpons/llama-kmp" class="cta-secondary" target="_blank" rel="noopener">Star Llamatik</a>
+  </div>
 </div>
 {{< /text-section >}}
 
